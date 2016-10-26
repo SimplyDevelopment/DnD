@@ -1,0 +1,7 @@
+[submodule "src/github.com/constabulary/gb"]
+	path = src/github.com/constabulary/gb
+	url = https://github.com/constabulary/gb
+
+[submodule "src/github.com/pkg/errors"]
+        path = src/github.com/pkg/errors
+        url = https://github.com/pkg/errors

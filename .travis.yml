@@ -1,0 +1,22 @@
+language: go
+
+go:
+  - 1.6
+
+install:
+  - ./build.sh
+script:
+  - echo "BUILD PASSED"
+
+deploy:
+  provider: releases
+  api_key: $OAUTH
+  overwrite: true
+  file:
+    - ./bin/dnd-linux-386
+    - ./bin/dnd-linux-amd64
+    - ./bin/dnd-windows-386.exe
+    - ./bin/dnd-windows-amd64.exe
+  skip_cleanup: true
+  on:
+    tags: true
