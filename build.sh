@@ -28,3 +28,6 @@ build windows amd64
 
 build linux 386
 build linux amd64
+
+build freebsd 386
+build freebsd amd64

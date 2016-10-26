@@ -20,6 +20,9 @@ REM build linux
 call :build linux amd64
 call :build linux 386
 
+call :build freebsd amd64
+call :build freebsd 386
+
 REM remove the log
 del build.log
 
